@@ -149,7 +149,7 @@
     <h3>Data Visualization 成績</h3>
     <div id="div1"></div>
     <div id="div2"></div>
-    <script>
+    <script type="text/javascript" >
             d3.select("#div1")
             .append("table")
             .append("tr")
@@ -188,8 +188,8 @@
             .attr("height", function(d, i) { return ( 1) * 60; });
 
 
-    d3.text("./csv/data.csv", function (data) {
-        parsedCSV = d3.csv.parseRows(data);
+    d3.text("./csv/data.csv").then(function (data) {
+        parsedCSV = d3.csvParseRows(data);
         var container = d3.select("#div2")
             .append("table")
             .selectAll("tr")
