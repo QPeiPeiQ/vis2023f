@@ -1,23 +1,29 @@
-<!doctype html>
-<html lang="zh-Hant-TW">
-<head>
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://tjhsieh.github.io/c/vis/vis2023f/hw01/ -->
+<html lang="zh-Hant-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- Required meta tags -->
-<meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- D3, jquery -->
-<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+<script src="./index_files/d3.v3.min.js.下載" charset="utf-8"></script>
+<script src="./index_files/jquery-3.6.0.min.js.下載" charset="utf-8"></script>
 
 <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+<link href="./index_files/bootstrap.min.css" rel="stylesheet">
+<script src="./index_files/bootstrap.bundle.min.js.下載"></script>
 
 <title>作品集 Portfolio</title>
 <!-- https://alexlenail.me/NN-SVG/about.html -->
-<link rel="icon" href="../hw00/favicon.svg"/>
+<link rel="icon" href="https://tjhsieh.github.io/c/vis/vis2023f/hw00/favicon.svg">
 <style type="text/css">
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap'); */
+
+  @font-face {
+    font-family:'CircleFont'; 
+    src: url(https://github.com/Circle472/ct2022s/raw/main/hw04/CircleFont_v2.woff2);
+  }
 
   table {
   border-collapse: collapse;
@@ -44,7 +50,7 @@
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       outline:none;
       font-size: 14px;
-      font-family: Trebuchet, Arial, sans-serif;
+      font-family: 'CircleFont', Trebuchet, Arial, sans-serif;
       font-weight: bold;
       cursor:pointer;
       border:1px solid #ddd;
@@ -79,7 +85,7 @@
   body {
     background-color: rgb(106, 76, 156); /* #6A4C9C */
     color: rgb(106, 76, 156);
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'CircleFont', 'Noto Serif JP', serif;
   }
 
   .container-fluid {
@@ -178,42 +184,60 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      Simple baseline – 虛設成績表(隨機產生120人CSV成績表)，程式碼放在 https://github.com/<span style="color:red;">bernadette451</span>/vis2023f/hw01/<span style="color:red;">src-sasy</span>/
-    </div>
-    <div class="col-md-12 twenty">
-      Medium baseline – 虛設成績表(繪製v3蘋果成績表)，程式碼放在 https://github.com/<span style="color:red;">bernadette451</span>/vis2023f/hw01/<span style="color:red;">src-medium-v3</span>/
-    </div>
-    <div class="col-md-12 twenty">
-      Medium baseline – 虛設成績表(繪製v7蘋果成績表)，程式碼放在 https://github.com/<span style="color:red;">bernadette451</span>/vis2023f/hw01/<span style="color:red;">src-medium-v7</span>/
+      Simple Baseline (隨機產生120人CSV成績表)程式碼，請放在 https://github.com/<span style="color:red;">QPeiPeiQ</span>/vis2023f/hw<span style="color:red;">01</span>/src-easy/<br>
+      <hr>
+      Simple Baseline (繪製 v3 蘋果成績表)程式碼，請放在 https://github.com/<span style="color:red;">QPeiPeiQ</span>/vis2023f/hw<span style="color:red;">01</span>/src-medium-v3/<br>
+      <hr>
+      Medium Baseline (繪製 v7 蘋果成績表)程式碼，請放在 https://github.com/<span style="color:red;">QPeiPeiQ</span>/vis2023f/hw<span style="color:red;">01</span>/src-medium-v7/<br>
+      <hr>
+      Strong Baseline (參考<a href="https://observablehq.com/@d3/gallery?utm_source=d3js-org&amp;utm_medium=nav&amp;utm_campaign=try-observable">D3畫廊</a>，繪製嶄新的成績表)程式碼，請放在 https://github.com/<span style="color:red;">QPeiPeiQ</span>/vis2023f/hw<span style="color:red;">01</span>/src-strong/<br>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
- <div class="row hw12">
-   <div class="col-md-12 twenty">
-     打開作品集資料夾 (GitHub 倉庫 vis2023f 傳送門)
-     <hr>
-     <input type="button" name="back" onclick="location.href='https://github.com/bernadette451/vis2023f/'" value="按我  ٩(｡・ω・｡)و   前往倉庫">
-   </div>
- </div>
-  
+  <div class="row hw12">
+      <div class="col-md-12 twenty">
+        打開作品集資料夾 (GitHub 倉庫 vis2023f 傳送門) 
+        <hr>
+        <input type="button" name="back" onclick="location.href=&#39;https://github.com/QPeiPeiQ/vis2023f/&#39;" value="按我  ٩(｡・ω・｡)و   前往倉庫"> 
+      </div>
+  </div>
+
+
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <a href="https://bernadette451.github.io/vis2023f/hw01/src-sasy/hw01.html">https://<span style="color:red;">bernadette451</span>.github.io/vis2023f/hw01/src-easy - 產生 Dummy CSV 虛構成績表</a>
-    </div>
-    <div class="col-md-12 twenty">
-      <a href="https://bernadette451.github.io/vis2023f/hw01/src-medium-v3/hw01.html">https://<span style="color:red;">bernadette451</span>.github.io/vis2023f/hw01/src-medium-v3 - 繪製 v3 蘋果成績表</a>
-    </div>
-    <div class="col-md-12 twenty">
-      <a href="https://bernadette451.github.io/vis2023f/hw01/src-medium-v7/hw01.html">https://<span style="color:red;">bernadette451</span>.github.io/vis2023f/hw01/src-medium-v7 - 繪製 v3 蘋果成績表</a>
+      <h4>前往 GitHub Pages 網頁 (GitHub Pages vis2023f 傳送門) </h4>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      本次的作業讓我認識了Math.random()以及Math.floor兩個常用的函示以及javascript基本語法，還有D3.js一個用於操作文件基於數據的JavaScript函式庫該如何使用，以及如何讀取其他檔案跟對此進行操作的方法 。
+      <a href="https://github.com/QPeiPeiQ/vis2023f/hw01/src-easy/">https://github.com/<span style="color:red;">QPeiPeiQ</span>/vis2023f/hw01/src-easy/</a>
+      <hr>
+      <a href="https://github.com/QPeiPeiQ/vis2023f/hw01/src-medium-v3/">https://github.com/<span style="color:red;">QPeiPeiQ</span>/vis2023f/hw01/src-medium-v3/</a>
+      <hr>
+      <a href="https://github.com/QPeiPeiQ/vis2023f/hw01/src-medium-v7/">https://github.com/<span style="color:red;">QPeiPeiQ</span>/vis2023f/hw01/src-medium-v7/</a>
+      <hr>
+      <a href="https://github.com/QPeiPeiQ/vis2023f/hw01/src-strong/">https://github.com/<span style="color:red;">QPeiPeiQ</span>/vis2023f/hw01/src-strong/</a>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h3>心得報告(100字)</h3>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      這次作業，我學到了如何使用 D3.js 讀入 CSV 格式成績表，進而繪製蘋果成績表。在這次的作業，d3.data() 可以綁定成績到 HTML  元素的 _groups[0][0].__data__ 屬性，可以打開 console 進行驗證。而 enter() 之後的函式， data 數量有多少，就會執行幾次。有點像 for 迴圈。
+      <hr>
+
+      心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。
     </div>
   </div>
 
@@ -221,37 +245,105 @@
   <div class="row hw12">
     <div class="col-md-12 twenty">
       <table>
-        <tr>
+        <tbody><tr>
           <th>總分</th>
           <th>完成後打勾</th>
           <th>配分</th>
           <th>分項描述</th>
         </tr>
         <tr>
-          <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
-          <td id='m1'>2</td>
+          <td rowspan="4" id="myTotal">2</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked=""></td>
+          <td id="m1">2</td>
           <td>Simple baseline - 產生 Dummy CSV 虛構成績表</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
-          <td id='m2'>3</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked=""></td>
+          <td id="m2">2</td>
           <td>Simple baseline - 繪製 v3 蘋果成績表</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
-          <td id='m3'>3</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked=""></td>
+          <td id="m3">2</td>
           <td>Medium baseline - 繪製 v7 蘋果成績表</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
-          <td id='m4'>2</td>
-          <td>Strong baseline - 繪製 v7 創新成績表，參考D3畫廊，修改範例，推出創新成績表</td>
+          <td id="m4">4</td>
+          <td>Strong baseline - 繪製 v7 創新成績表，參考<a href="https://observablehq.com/@d3/gallery?utm_source=d3js-org&amp;utm_medium=nav&amp;utm_campaign=try-observable">D3畫廊</a>，修改範例，推出創新成績表</td>
         </tr>
-      </table>
-
+      </tbody></table>
     </div>
   </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>Simple baseline - 產生 Dummy CSV 虛構成績表</h4>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <iframe width="100%" height="500" frameborder="0" style="background-color: #FFFFFF" src="./src-easy/index.html"></iframe>
+      <!--
+      <video id="video1" style="width:100%;max-width:100%;" controls="">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+      -->
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>Medium baseline - 繪製 v3 蘋果成績表</h4>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <iframe width="100%" height="500" frameborder="0" style="background-color: #FFFFFF" src="./src-medium-v3/index.html"></iframe>
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>Medium baseline - 繪製 v7 蘋果成績表</h4>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <iframe width="100%" height="500" frameborder="0" style="background-color: #FFFFFF" src="./src-medium-v7/index.html"></iframe>
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h4>Strong baseline - 參考<a href="https://observablehq.com/@d3/gallery?utm_source=d3js-org&amp;utm_medium=nav&amp;utm_campaign=try-observable">D3畫廊</a>，繪製嶄新的成績表</h4>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <iframe width="100%" height="500" frameborder="0" style="background-color: #FFFFFF" src="./index_files/index(3).html"></iframe>
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------>
+
+  <!-- ------------------------------------------------>
+
 
 <script>
   $(function() {
@@ -287,13 +379,10 @@
       score += parseInt(d3.select('#m3').html());   
     }
 
-    if (d3.select("#myCheckbox4").property("checked")){
-      score += parseInt(d3.select('#m4').html());   
-    }
-
     d3.select("#myTotal").html(score);    
   }
 </script>
 
-</body>
-</html>
+
+
+</div></body></html>
