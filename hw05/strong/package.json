@@ -1,0 +1,14 @@
+{
+  "name": "624564fa6c06f289",
+  "main": "624564fa6c06f289@14.js",
+  "version": "14.0.0",
+  "homepage": "https://observablehq.com/d/624564fa6c06f289",
+  "author": {
+    "name": "陳佩君's Workspace",
+    "url": "https://observablehq.com/@chen-pei-jun-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
